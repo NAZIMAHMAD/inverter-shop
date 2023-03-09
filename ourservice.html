@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>service</title>
+  
+  
+  <link href="style.css" rel="stylesheet"/>
+  
+  
+</head>
+
+<body>
+  
+  
+  <section id="Our-Service" style="background-color: chocolate;">
+  
+  
+  
+  <div id="card-box">
+    
+    
+  
+  <div class="card">
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEvpPvRDPhEJoP5VGBFbBUP0M6A4moqXiVyA&usqp=CAU" alt="" class="card-img">
+    
+    
+    
+    
+  </div>
+  
+   <div class="card">
+     
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNqdtSd5-0Teh6Ve5rwVnrW_3hTyKM5KtGg&usqp=CAU" alt="" class="card-img">
+     
+     
+   </div>
+   
+   <div class="card">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuz_KLWF1b6OpdVYs2x6_p6AEUPC2rOcyAYxxwYC7OLC0Tvc_JhYp6S4cEoAcSM06gPK1dkDs&usqp=CAc" alt="" class="card-img">
+     
+   </div>
+   
+   
+   <div class="card">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFAG8Fj6X2rkENIQfgWAqnGKs999vARMF3Nxw8ZcJUUJpzjRum4MfVkBu-IAugE1u8YHuT9aQ&usqp=CAc" alt="" class="card-img">
+     
+  
+     
+   </div>
+   
+   
+   
+   
+  </div>
+  
+  
+  
+   <div id="Repair-card">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4x3pJK3GQlSzP8c1mxjllneIKauTWjt8OQ&usqp=CAU" alt="" class="repair-img">
+     
+     <aside id="repair-content">
+       
+       <h2 style="color:teal; font-size:20px;">Repair service </h2>
+       <p style="color:white;padding-top:25px; font-size:12px;">
+
+
+We provide service of Inverter,Ups, Stabilizer,Solar Inverter,Online Ups,Battery tester,Battery charger etc... </p>
+
+
+    
+
+
+<div id="resister" style="display:none;">
+  
+ <div id="form-head">
+  
+  <h4>fill the details</h4>
+  
+   <i class="fa-regular fa-rectangle-xmark" onclick="mark()" id="mark"></i>
+   
+  </div>
+   
+ 
+  
+    <form action="https://formspree.io/f/xgebeper" method="post" id="form-box">
+      
+      <div id="flex-form1">
+      
+        <label for="date">Enter the Date</label>
+  <input type="date" name="date" id="date" required class="input"/>
+  
+  
+  
+  
+  <label for="User-1st">Enter the first Name</label>
+  <input type="text" name="1stName" id="User-name" required class="input"/>
+  
+  
+  
+  
+    <label for="User-last">Enter the lastname Name</label>
+  
+  <input type="text" name="user-last" id="User-last" required class="input"/>
+  
+ 
+  
+  
+  <label for="number">Enter the mobile number </label>
+  
+  <input type="number" name="number" id="number" required class="input"/>
+ 
+  
+  
+  
+ <label for="email">Enter the your email </label>
+ 
+  <input type="email" name="email" id="email" required class="input"/>
+ 
+  
+    <input type="checkbox" name="confirm" id="checkbox" required/>
+  <label>confirm that all these information filled by me is correct</label>
+ 
+  
+    <button type="submit" name="submitForm" id="submit_btn">submit</button>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <div id="flex-form2">
+  
+  
+   <label for="address">Enter the your address </label>
+  <input type="address" name="address" id="address" required class="input"/>
+ 
+  
+  
+ <label for="number">Enter the your alternate number </label>
+  <input type="number" name="number" id="altNumber" required class="input"/>
+  
+  
+  
+  <label>select the inverter issue</label>
+  <br/>
+  <select>
+  <option>porblems</option>
+  <option>Dead,</option>
+<option>Not working properly,</option>
+<option>Mosfet Burnt,</option>
+<option>Relay Faulty,</option>
+<option>Pcb Burnt,</option>
+<option>Low Backup,</option>
+<option>Low Battery,</option>
+<option>Fuse Blown,</option>
+<option>Over Load,</option>
+<option>No Mains,</option>
+<option>Mains Fluctuation,</option>
+<option>Charging Problem,</option>
+<option>No Charging,</option>
+<option>ON/OFF Switch Faulty,</option>
+<option>Output Socket Faulty,</option>
+<option>No Display,</option>
+<option>Battery wire heating,</option>
+<option>Cooling Fan Faulty,</option>
+<option>No Output,</option>
+<option>Relay Fluctuations,</option>
+  
+    </select>
+   
+  
+  
+  <label for="inv-serialNumber">Enter the your inverter serial number </label>
+  <input type="number" name="number" id="inv-serialNumber" required class="input"/>
+  
+  
+ 
+  <label for="issueDate">Issue Date inverter</label>
+  <input type="date" name="issueDate" id="issueDate" required class="input"/>
+ 
+  
+  
+ <label for="inverterBill">upload inverter bill</label>
+ 
+ 
+ 
+ <input type="file" name="inverterBill" id="inverterBill"  style="font-size:5px;"/>
+ 
+  
+ 
+  
+    
+  
+  
+  
+
+  
+  </div>
+  
+  </form>
+  
+  
+</div>
+
+
+
+
+
+
+<button type="submit" class="button" onclick="issue()">Resister issue </button>
+       
+     </aside>
+     
+   </div>
+   
+  </section>
+    
+    
+    
+  
+
+</body>
+
+</html>

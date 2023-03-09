@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inverter shop</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  
+
+<link href="style.css" rel="stylesheet"/>
+
+<style>
+
+*
+{
+  padding:0px;
+  margin:0px;
+  font-family:serif;
+}
+
+html
+{
+  scroll-behavior:smooth;
+}
+
+.container
+{
+ height:2000px;
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:40px 100px 400px 1200px 600px 500px 100px;
+  background-color:white;
+ 
+}
+
+
+#Main-heading 
+{
+  background-color: black;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  color:white;
+ 
+  
+}
+
+
+
+#Main-heading .main-part
+{
+  text-decoration:none;
+  font-size:small;
+  color: white;
+}
+
+
+.header
+{
+  
+border-bottom:1px solid white;
+  position:sticky;
+  top:0px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center ;
+  box-sizing: border-box;
+  text-transform:capitalize ;
+  background-color:whitesmoke;
+  box-shadow:5px 5px 10px lightblue;
+  
+ 
+}
+
+#navbar ul li a
+{
+  color: black;
+}
+
+.header img
+{
+  border-radius:50%;
+  border:1px solid grey;
+}
+
+#img2
+{
+  width:310px;
+  height:310px;
+
+  
+  
+}
+
+#heading-content
+{
+  text-transform:capitalize ;
+  color:white;
+  font-family:serif;
+  width:300px;
+  height:300px;
+  box-sizing: border-box;
+  font-size:10px;
+  padding-top:15%;
+  line-height:15px;
+  text-align:center;
+  margin:auto;
+ 
+  
+}
+
+
+
+#btn-grp
+{
+  position: relative ;
+  left:30px;
+}
+
+
+ .header #navbar ul li
+{
+  display: inline-block;
+  color:white;
+  padding-left:20px;
+  font-weight:bolder;
+  text-transform:capitalize ;
+  font-size:small;
+  
+  
+}
+
+
+.btn
+{
+  width:80px;
+  height:30px;
+  background: transparent;
+  outline-style:none;
+  border:none;
+  border:1px solid skyblue;
+  text-align: center ;
+  color:black;
+  font-family:bolder;
+  cursor: pointer ;
+  text-transform:capitalize ;
+  
+  
+}
+
+#btn3
+{
+  width:100px;
+  height:30px;
+  background-color:black;
+  outline-style:none;
+  border:none;
+  border:1px solid black;
+  text-align: center ;
+  color:white;
+  font-family:bolder;
+  cursor: pointer ;
+  margin-top:20px;
+  text-transform:capitalize ;
+  font-size:16px;
+  border-radius:5px;
+}
+
+#hero-section
+{
+  border-bottom:1px solid grey;
+ 
+  justify-content:space-around;
+  box-sizing:border-box;
+  align-items: center ;
+  padding-left:30px;
+  background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlSB8VDbYfrWsxF2EjQJKPPANPBtb8uHKSxA&usqp=CAU');
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center;
+ 
+  
+  
+}
+
+#navbar ul li a
+{
+  text-decoration:none;
+  color:black;
+  
+}
+
+#navbar ul li a:hover
+{
+  color: chocolate;
+ 
+  
+}
+
+.card
+{
+  border:1px solid lightgrey ;
+  width:150px;
+  height:150px;
+  color:skyblue;
+  margin:20px;
+  text-align: center ;
+  background-color:white;
+  
+  
+  
+
+}
+
+
+#card-box
+{
+  display:flex;
+  justify-content: center ;
+  box-sizing:border-box;
+ 
+}
+
+
+.fa-solid
+{
+  display:none;
+ 
+}
+
+
+.fa-regular
+{
+  display:none;
+}
+
+.card-img
+{
+  width:120px;
+  height:120px;
+  padding-top:10px;
+  
+}
+
+
+
+.header
+{
+  z-index:1;
+}
+
+#repair-content
+{
+  width:350px;
+  height:280px;
+  padding-top:10px;
+  box-sizing:border-box;
+  text-transform:capitalize ;
+  font-family:serif;
+
+ 
+  
+}
+
+
+
+.repair-img
+{
+  width:310px;
+  height:310px;
+  box-shadow:5px 5px 5px darkgrey;
+ 
+}
+
+#Repair-card
+{
+  display:flex;
+  justify-content:space-around;
+  box-sizing:border-box;
+}
+
+#team-box1
+{
+ 
+ display:flex;
+ justify-content:space-around;
+ margin-top:20px;
+ box-sizing:border-box;
+
+  
+}
+
+.team-content
+{
+  width:300px;
+  height:300px;
+  box-sizing:border-box;
+  text-align: justify;
+  font-size:small;
+  padding-top:10px;
+  font-family:serif;
+  
+ 
+}
+
+
+
+.team-content p
+{
+  padding-top:40px;
+  color:white;
+  font-size:14px;
+  line-height:20px;
+ 
+}
+
+#img2
+{
+  box-shadow:5px 5px 20px;
+  width:310px;
+  height:310px;
+  
+}
+
+
+
+.team-content h2
+{
+  
+ color:skyblue;
+}
+
+
+#our-team > h1
+{
+  text-align: center ;
+  padding-top:20px;
+  text-transform:capitalize;
+ 
+ 
+}
+
+.img-team
+ {
+   width:310px;
+   height:310px;
+   border:2px solid whitesmoke;
+   margin-top:20px;
+ }
+
+
+.button
+{
+  
+  margin-top:40px;
+  border:none;
+  cursor:pointer ;
+  width:100px;
+  height:30px;
+  background-color:teal;
+  color:white;
+  font-size:12px;
+  
+}
+
+
+
+#our-team h1
+{
+  padding-top:50px;
+}
+
+.ourTeam-heading 
+{
+  color:black;
+  text-transform:capitalize ;
+ font-size:12px;
+ margin-left:20px;
+ 
+}
+
+.ourTeam-heading>h1
+{
+  padding-left:30px
+}
+ 
+ #btn
+ {
+   border:none;
+   outline:none;
+   width:80px;
+   height:30px;
+   margin-top:15%;
+   background-color:red;
+   color:white;
+   cursor: pointer ;
+  
+   
+ }
+ 
+ #heading
+ {
+   border-bottom:2px solid grey;
+width:190px;
+
+ }
+ 
+ #resister
+ {
+   width:500px;
+   height:650px;
+   position:fixed;
+   top:20%;
+   right:20%;
+   left:25%;
+ box-shadow:10px 8px 15px;
+ border-radius:20px;
+ padding-top:20px;
+ box-sizing:border-box;
+ background-color:white;
+ color:grey;
+ 
+ 
+}
+
+h4
+{
+  margin-right:20%;
+}
+
+#form-box
+{
+ display:flex;
+ justify-content:space-around;
+ align-items: center ;
+ margin-top:20px;
+ 
+}
+
+label
+{
+  font-size:10px;
+  display:block;
+  padding-top:30px;
+  
+ 
+}
+
+select ,option
+{
+  font-size:10px;
+}
+
+button
+{
+  background: transparent ;
+  border:none;
+  outline:none;
+  width:60px;
+  background-color:red;
+  height:20px;
+  color:white;
+  cursor:pointer ;
+  margin-top:20px;
+  border-radius:2px;
+  font-size:10px;
+  
+}
+
+#mark
+ {
+   display:block;
+   margin-left:100px;
+   
+  
+ }
+ 
+ #form-head
+ {
+   display:flex;
+   justify-content:space-around;
+   
+ 
+ }
+ 
+ #flex-form1
+ {
+  
+   width:250px;
+   height:600px;
+   margin-left:40px;
+   
+ }
+ 
+ #flex-form2
+ {
+   
+   width:250px;
+   height:600px;
+   
+ }
+ .input
+ {
+   width:150px;
+   margin-top:20px;
+   text-align:center;
+   height:15px;
+ }
+ 
+ #checkbox
+  {
+    display:block;
+    margin-top:20px;
+  }
+  
+  #location
+  {
+    width:auto;
+    height:auto;
+    border-radius:10px;
+    margin-top:10%;
+  }
+  
+  .footer_box
+ {
+ 
+   
+  
+   display:flex;
+   justify-content:space-evenly;
+   padding-top:10%;
+   box-sizing:border-box;
+   
+ }
+ 
+ 
+#footer
+{
+  background-color:whitesmoke;
+}
+ 
+ #email
+ {
+   background:transparent ;
+   border:none;
+   background-color:white ;
+   border-radius:5px;
+   padding-left:10px;
+   height:30px;
+   outline-color:skyblue;
+   
+   
+ }
+ 
+ 
+ #footer h3
+ {
+   color:grey;
+   padding-left:10%;
+   text-transform:capitalize;
+   letter-spacing:2px;
+   font-size:20px;
+   
+ }
+ 
+ 
+ #address
+ {
+margin-left:10%;
+margin-top:10px;
+ }
+ 
+ #input
+ {
+  
+   outline:none;
+   background: transparent ;
+   border:none;
+   background-color:red;
+   width:220px;
+   height:25px;
+   color:white;
+   font-weight:bold;
+   border-radius:5px;
+   cursor:pointer ;
+   margin-top:20px;
+   
+ }
+ 
+ 
+ #input1
+ {
+  
+   background:transparent ;
+   border:none;
+   background-color:white ;
+   outline:none;
+   border-radius:3px;
+   padding-left:10px;
+   height:30px;
+   margin-top:20px;
+   display:block;
+   
+ }
+ 
+ 
+ #footer p
+ {
+   
+font-weight:bold;
+color:skyblue;
+text-transform:capitalize ;
+letter-spacing:2px;
+padding:50px 0 0 50px;
+
+
+ }
+ 
+ #list-company ul li
+{
+  list-style:none;
+  font-size:14px;
+  color:black;
+  padding-top:15px;
+  letter-spacing:2px;
+  text-transform:capitalize;
+ 
+}
+
+#ul-service ul li 
+{
+  color:black;
+  font-size:14px;
+  list-style:none;
+  padding-top:15px;
+  letter-spacing:2px;
+  text-transform:capitalize;
+}
+
+#list-company h1
+{
+  color: darkgrey;
+  text-transform: uppercase ;
+  letter-spacing:1px;
+  font-size:16px
+}
+
+ #ul-service h1
+ {
+   color:darkgrey;
+   text-transform: uppercase ;
+   letter-spacing:1px;
+   font-size:16px;
+ }
+ 
+
+ #social-media a i
+ {
+   color:grey;
+   cursor:pointer;
+   font-size:14px;
+   padding:20px 0 0 20px;
+   
+   
+
+ }
+ 
+ 
+ 
+ #social-media
+ {
+   text-align:center;
+   margin-top:50px;
+ 
+   
+ }
+ 
+ #social-media h1
+ {
+   color:darkgrey;
+   font-size:16px;
+ }
+ 
+ #footer_container
+ {
+   background-color:white;
+   text-align:center;
+   padding:40px 0 0 40px;
+   font-size:16px;
+   color:grey;
+ }
+ 
+ 
+ marquee
+ {
+   color:white;
+   padding-top:15px;
+   box-sizing:border-box;
+ }
+ 
+#Our-Service>h1
+
+{
+  font-size:18px;
+  padding:30px 0 0 40px;
+  color:darkgrey;
+}
+
+#repair-content>h2
+{
+  font-size:18px;
+}
+
+#repair-content p
+{
+  font-size:14px;
+  line-height:20px;
+  padding-top:20px;
+}
+
+.component-box
+{
+  display:flex;
+  justify-content:space-around;
+  margin-top:15%;
+ 
+}
+
+.fuse-content
+{
+ width:350px;
+  height:280px;
+  padding-top:10px;
+  box-sizing:border-box;
+  text-transform:capitalize ;
+  font-family:serif;
+  padding:70px 0 140px 0;
+  
+}
+
+.fuse-content>h1
+{
+  color:skyblue;
+  text-transform:capitalize;
+  font-size:18px;
+}
+
+.fuse-content>p
+{
+  color:black;
+  font-size:16px;
+  padding:20px 0 0 0;
+  line-height:25px;
+  
+}
+
+#Repair-card 
+{
+  padding-top:30px;
+}
+
+
+@media (min-width:320px) and (max-width:480px)
+
+{
+  
+  .header
+  {
+    
+    z-index:1;
+    
+  }
+  
+  .container
+{
+  height:auto;
+  display:grid;
+  grid-template-columns:100%;
+  grid-template-rows:50px 100px 400px 3300px 1000px 1000px 100px ;
+  box-sizing:border-box;
+  
+}
+
+.fa-solid
+{
+  display:block;
+  font-size:30px;
+color:black;
+padding-top:5px;
+
+
+
+}
+
+
+
+#hum_icon
+{
+  border:4px solid lightblue;
+  width:40px;
+  height:40px;
+  text-align:center;
+  border-radius:5px;
+ 
+ 
+ 
+  
+}
+
+#navbar
+{
+ 
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:30em;
+  color:teal;
+  display:none;
+  border-bottom:1px solid whitesmoke;
+  background-color:whitesmoke;
+  box-shadow:5px 5px 5px darkgrey;
+
+}
+
+ .header #navbar ul li
+{
+  display:block;
+  padding-top:40px;
+  text-align: center ;
+  font-size:larger;
+  
+}
+
+.header #navbar ul li 
+{
+  color:skyblue;
+  font-size:20px;
+  transition:all 1s;
+ 
+}
+
+#navbar ul
+{
+  box-sizing:border-box;
+}
+
+#navbar ul
+{
+  padding-top:70px;
+  padding-right:20px;
+}
+
+.btn
+{
+  border:1px solid skyblue;
+ 
+  
+}
+
+#btn-grp
+{
+float:left;
+margin-top:40px;
+}
+
+
+.btn2
+{
+  display:inline-block;
+}
+
+
+.btn4
+{
+  border:1px solid whitesmoke;
+}
+
+
+
+#card-box
+{
+  
+  
+  justify-content:center ;
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:60px;
+ 
+}
+
+
+.card
+  {
+    width:310px;
+    height:310px;
+    background-color:white;
+    box-shadow:5px 5px 5px darkgray
+  }
+
+
+ 
+
+
+.card-img
+{
+  width:310px;
+  height:310px;
+  box-shadow:5px 5px 5px darkgray
+}
+
+
+
+.fa-regular
+{
+  color:teal;
+  float: right;
+  font-size:30px;
+  margin:30px 40px;
+  display: inline-block;
+  
+  
+}
+
+#heading-content
+{
+margin-top:40px;
+box-sizing:border-box;
+text-align:center;
+padding-right:10%;
+
+}
+#heading-content>h1
+{
+  font-size:20px;
+  line-height:20px;
+}
+
+#heading-content>p
+{
+  font-size:16px;
+  font-weight:bold;
+}
+
+#Repair-card
+{
+  display:flex;
+  flex-direction: column-reverse;
+  box-sizing:border-box;
+  
+  
+}
+
+.repair-img
+
+{
+  width:310px;
+  height:310px;
+  position:relative;
+  margin:auto;
+  margin-top:12rem;
+ 
+}
+
+#repair-content
+{
+  width:320px;
+  height:280px;
+  margin:auto;
+  margin-top:60px;
+  margin-left:30px;
+ 
+}
+
+#fuse-content p
+{
+  
+  font-size:16px;
+  line-height:25px;
+  color:black;
+  padding-top:20px;
+  
+ 
+}
+.fuse-content
+{
+  text-transform:capitalize;
+  width:340px;
+  padding-left:30px;
+ 
+
+}
+.fuse-card
+{
+  margin-left:30px;
+  position: relative ;
+  bottom:160px;
+}
+
+#fuse-content h1
+{
+  color:skyblue;
+  font-size:20px;
+  
+}
+ 
+ .component-box
+ {
+   display:flex;
+   flex-direction:column;
+   
+ }
+ 
+ .footer_box
+  {
+    display:flex;
+    flex-direction:column;
+  }
+  
+
+
+
+#team-box1
+{
+ 
+ display:flex;
+ flex-direction:column;
+ box-sizing:border-box;
+ margin-left:24px;
+
+  
+}
+
+.img-team
+{
+  width:310px;
+  height:310px;
+}
+
+.team-content
+{
+  
+  margin-left:10px;
+  
+}
+
+.team-content>p
+{
+  font-size:16px;
+  word-spacing:-5px;
+  line-height:25px;
+}
+
+#our-team h1
+{
+  padding-top:40px;
+  
+}
+
+.ourTeam-heading
+{
+  color:white;
+  text-transform:capitalize ;
+  font-size:16px;
+  margin-left:14px;
+
+  
+}
+
+
+
+#Main-heading
+{
+  background-color:teal;
+}
+
+#resister
+{
+  position:fixed ;
+  top:10px;
+  width:auto;
+  height:600px;
+  border-radius:10px;
+  box-shadow:10px 8px 15px;
+  z-index: 1;
+  left:10px;
+  right:10px;
+  box-sizing:border-box;
+  
+}
+
+#resister h4
+{
+  position: absolute ;
+  right:50%;
+  font-size:10px;
+  top:40px;
+  display:inline-block;
+}
+
+label
+{
+  font-size:8px;
+}
+
+
+.input
+{
+  width:100px;
+  margin:0px;
+  border-radius:5px;
+  outline-style:none;
+  
+}
+
+
+#form-box
+{
+position: relative ;
+
+}
+
+
+#form-head 
+{
+  
+height:30px;
+font-size:10px;
+width:100%;
+padding-left:10%;
+text-align: center ;
+
+
+
+}
+
+
+button
+{
+  background:transparent ;
+  border:none;
+  outline:none;
+  width:80px;
+  background-color:teal;
+  height:30px;
+  color:white;
+  cursor:pointer;
+  text-transform:capitalize;
+ }
+ 
+ 
+ 
+ #mark
+  {
+    position: absolute ;
+    bottom:85%;
+    left:50%;
+    color:black;
+  }
+  
+ 
+
+.button
+{
+  background-color:teal;
+  color: white;
+  width:100px;
+  height:40px;
+  font-size:14px;
+  
+  
+}
+
+#btn:hover
+{
+  background-color:skyblue;
+}
+
+#repair-content>p
+{
+  font-size:16px;
+  padding-top:20px;
+  text-transform:capitalize;
+  line-height:25px;
+}
+
+#repair-content h2
+{
+  font-size:20px;
+}
+
+#Our-Service>h1
+{
+  padding:40px 0 0 20px;
+  color:skyblue;
+  
+}
+
+marquee
+{
+  color:white;
+  padding:20px 0 0px 0px;
+  font-size:16px;
+  
+  
+  
+}
+
+  #footer
+    {
+      display:flex;
+      flex-direction:column;
+      height:1000px;
+     background-color:whitesmoke;
+    text-transform:capitalize;
+      
+    }
+    
+    
+    #detail
+    {
+position: relative ;
+right:10%;
+
+    }
+    
+#footer p
+{
+  font-size:20px;
+  color:skyblue;
+  text-transform:capitalize;
+  
+  
+  
+  
+}
+
+#social-media a>i
+{
+  font-size:20px;
+  color:darkgray;
+}
+
+#ul-service  h1
+  {
+    color:white;
+    font-size:20px;
+    text-transform:capitalize;
+    color:black;
+  }
+#list-company h1
+{
+  color:white;
+  font-size:20px;
+  text-transform:capitalize;
+  color:black;
+}
+
+#list-company
+{
+  padding-top:30%;
+}
+
+#list-company ul li
+{
+  font-size:16px;
+  color:darkgrey;
+  padding-top:10px;
+  
+}
+
+#ul-service ul li
+{
+  font-size:16px;
+  color:darkgrey;
+  padding-top:10px;
+}
+
+#ul-service
+{
+  padding-top:30%;
+}
+
+#social-media
+{
+  margin-right:30%;
+}
+
+#footer_container 
+{
+  text-align: center;
+  width:100%;
+  height:100px;
+  box-sizing:border-box;
+
+}
+
+.footer_box
+{
+  padding-left:20%;
+}
+
+#social-media
+{
+  padding-left:20%;
+}
+
+
+}
+
+</style>
+
+</head>
+
+
+
+  
+
+
+<body>
+  
+
+  
+ <main class="container" id="container">
+   
+   <!--login form -->
+   
+
+   
+ 
+   
+   
+  <div id="Main-heading" class="container-fluid">
+  
+    <a href="tel:9326741730" class="main-part">Tel :9326741730</a>
+    
+    <a href="mailto:danish.mtek@gmail.com" class="main-part">danish.mtek@gmail.com</a>
+    
+  </div>
+   
+   
+   
+<header class="header">
+  
+  <h3 style="color:darkgrey;">Danish <span style="color:skyblue;">electronics</span> </h3>
+  
+  <div id="hum_icon">
+  
+<i class="fa-solid fa-bars" id="toggle" onclick="toggle_bar()" ></i>
+
+</div>
+  
+  <navbar id="navbar">
+    
+    <i class="fa-regular fa-rectangle-xmark" onclick="xMark()" id="xMark"></i>
+    
+    <ul>
+      
+      <li><a href="#container" target="_top">Home</a></li>
+      <li><a href="ourservice.html" target="_top">Service</a></li>
+      <li><a href="#our-team" target="_top">Our team</a></li>
+      <li><a href="#footer-box" target="_top">help</a></li>
+      
+     
+     
+     <span id="btn-grp">
+      
+     
+   <button type="button" name="btn1" class="btn btn2">
+  sign in</button> 
+  
+ <button type="button" name="btn2" class="btn btn4" style="background: transparent; color:black;border:1px solid skyblue;margin-left:15px;text-transform:capitalize;">
+   login</button>
+   
+   
+   
+  </span>
+   
+   
+   </ul>
+   
+  </navbar>
+  
+  
+</header>
+
+
+
+
+
+<section id="hero-section" >
+  
+
+<div id="heading-content">
+  
+  <h1 style="color:skyblue;"> welcome to Danish electronics. </h1>
+  <p style="padding-top:16px;">product & repair service all company: microtek , luminous, sukam ,exide, amaron. </p>
+  
+  <button type="button" id="btn3">About us
+  </button>
+  
+</div>
+  
+    
+    
+    
+
+</section>
+
+
+
+<section id="Our-Service" style="background-color:whitesmoke;border-radius:0 0 0 150px">
+  
+   <marquee width="100%" direction="left" height="50px" scrollamount="3" bgcolor="black";>
+     
+we offer : 180 Days Free Service Charge on every WORK only for GENUS, AMARON, LUMINOUS, SUKAM, MICROTEK.
+30 Days Components warranty. 2 PCB REPLACEMENT WARRANTY 30 DAYS.
+</marquee>
+  
+  <h1> Inverter Service </h1>
+  
+  <div id="card-box" data-aos="fade-up" data-aos-offset="300">
+    
+    
+  
+  <div class="card" >
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEvpPvRDPhEJoP5VGBFbBUP0M6A4moqXiVyA&usqp=CAU" alt="" class="card-img">
+    
+    
+    
+    
+  </div>
+  
+   <div class="card" data-aos="fade-up" data-aos-offset="300">
+     
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhNqdtSd5-0Teh6Ve5rwVnrW_3hTyKM5KtGg&usqp=CAU" alt="" class="card-img">
+     
+     
+   </div>
+   
+   <div class="card"  data-aos="fade-up" data-aos-offset="300">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuz_KLWF1b6OpdVYs2x6_p6AEUPC2rOcyAYxxwYC7OLC0Tvc_JhYp6S4cEoAcSM06gPK1dkDs&usqp=CAc" alt="" class="card-img">
+     
+   </div>
+   
+   
+   <div class="card" data-aos="fade-up" data-aos-offset="300">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVFAG8Fj6X2rkENIQfgWAqnGKs999vARMF3Nxw8ZcJUUJpzjRum4MfVkBu-IAugE1u8YHuT9aQ&usqp=CAc" alt="" class="card-img">
+     
+  
+     
+   </div>
+   
+   
+   
+   
+  </div>
+  
+  
+  
+   <div id="Repair-card">
+     
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQl4x3pJK3GQlSzP8c1mxjllneIKauTWjt8OQ&usqp=CAU" alt="" class="repair-img"data-aos="fade-up" data-aos-offset="300">
+     
+         <aside id="repair-content" data-aos="fade-up" data-aos-offset="300">
+       
+       <h2 style="color:skyblue;">we provide instant service within 24 hours after resister issue. </h2>
+       <p>
+
+
+Services provided by the Top Inverter Repair Service Experts in jalgaon voltas UPS service in jalgaon Exide inverter repair service in jalgaon Luminous inverter repair in jalgaon Microtek UPS service in jalgaon Arise inverter repair in jalgaon Su-Kam UPS service in jalgaon Delta UPS service in jalgaon Uniline UPS service in jalgaonTrue Power inverter repair in jalgaon. </p>
+
+
+
+
+      
+
+
+<div id="resister" style="display:none;">
+  
+ <div id="form-head">
+  
+  <h4>fill the details</h4>
+  
+   <i class="fa-regular fa-rectangle-xmark" onclick="mark()" id="mark"></i>
+   
+  </div>
+   
+ 
+  
+    <form action="https://formspree.io/f/xgebeper" method="post" id="form-box">
+      
+      <div id="flex-form1">
+      
+        <label for="date">Enter the Date</label>
+  <input type="date" name="date" id="date" required class="input"/>
+  
+  
+  
+  
+  <label for="User-1st">Enter the first Name</label>
+  <input type="text" name="1stName" id="User-name" required class="input"/>
+  
+  
+  
+  
+    <label for="User-last">Enter the lastname Name</label>
+  
+  <input type="text" name="user-last" id="User-last" required class="input"/>
+  
+ 
+  
+  
+  <label for="number">Enter the mobile number </label>
+  
+  <input type="number" name="number" id="number" required class="input"/>
+ 
+  
+  
+  
+ <label for="email">Enter the your email </label>
+ 
+  <input type="email" name="email" id="email" required class="input"/>
+ 
+  
+    <input type="checkbox" name="confirm" id="checkbox" required/>
+  <label>confirm that all these information filled by me is correct</label>
+ 
+  
+    <button type="submit" name="submitForm" id="submit_btn">submit</button>
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <div id="flex-form2">
+  
+  
+   <label for="address">Enter the your address </label>
+  <input type="address" name="address" id="address" required class="input"/>
+ 
+  
+  
+ <label for="number">Enter the your alternate number </label>
+  <input type="number" name="number" id="altNumber" required class="input"/>
+  
+  
+  
+  <label>select the inverter issue</label>
+  <br/>
+  <select>
+  <option>porblems</option>
+  <option>Dead,</option>
+<option>Not working properly,</option>
+<option>Mosfet Burnt,</option>
+<option>Relay Faulty,</option>
+<option>Pcb Burnt,</option>
+<option>Low Backup,</option>
+<option>Low Battery,</option>
+<option>Fuse Blown,</option>
+<option>Over Load,</option>
+<option>No Mains,</option>
+<option>Mains Fluctuation,</option>
+<option>Charging Problem,</option>
+<option>No Charging,</option>
+<option>ON/OFF Switch Faulty,</option>
+<option>Output Socket Faulty,</option>
+<option>No Display,</option>
+<option>Battery wire heating,</option>
+<option>Cooling Fan Faulty,</option>
+<option>No Output,</option>
+<option>Relay Fluctuations,</option>
+  
+    </select>
+   
+  
+  
+  <label for="inv-serialNumber">Enter the your inverter serial number </label>
+  <input type="number" name="number" id="inv-serialNumber" required class="input"/>
+  
+  
+ 
+  <label for="issueDate">Issue Date inverter</label>
+  <input type="date" name="issueDate" id="issueDate" required class="input"/>
+ 
+  
+  
+ <label for="inverterBill">upload inverter bill</label>
+ 
+ 
+ 
+ <input type="file" name="inverterBill" id="inverterBill"  style="font-size:5px;"/>
+ 
+  
+ 
+  
+    
+  
+  
+  
+
+  
+  </div>
+  
+  </form>
+  
+  
+</div>
+
+
+
+
+
+
+<button type="submit" class="button" onclick="issue()">Resister issue </button>
+       
+     </aside>
+     
+   </div>
+   
+   
+   <div class="component-box">
+   
+  <aside class="fuse-content" data-aos="fade-up" data-aos-offset="300">
+     
+     
+     
+     <h1>best quality of components we provide</h1>
+   
+   <p>
+
+1. 10A AC Fuse Original
+
+2. 40A DC Fuse Original
+
+3. 10MM Battery Lugs for INVERTER
+
+4. 16A Battery Lugs for JUMBO INVERTER,UPS, ONLINE UPS
+</p>
+   </aside>
+   
+     <div class="fuse-card">
+     
+    <img src="https://ik.imagekit.io/6qllit8qs/p-img.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1677397940705" alt="part img" class="repair-img" data-aos="fade-up" data-aos-offset="300">
+     
+   </div>
+   
+   </div>
+   
+   
+  </section>
+    
+    
+    
+   <section id="our-team" style="background-color:skyblue; border-radius:0px 0 150px 0">
+      
+      <div class="ourTeam-heading" data-aos="fade-up" data-aos-offset="300"><h1>experienced </h1></div>
+      
+      
+     <div id="team-box1">
+
+
+       
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEkgUhHhdLQSk4brS0v6AA6RY5qYmg9C9Ykw&usqp=CAU" alt="" class="img-team" data-aos="fade-up" data-aos-offset="300"/>
+       
+     <div class="team-content" data-aos="fade-up" data-aos-offset="300">
+         
+      
+    <p>Worked as service engineer microtek pvt ltd.Expert in SMD based Inverter,Ups,Good Quality Components Usage Best Technician working.The power   outages with get immediate solutions of UPS to form your main supply to the battery whereas the inverter has a time delay.The rectifier and battery rectifier in the built-in circuit of ups are converted into AC and DC storage.The external battery saves energy and converts DC power for you.</p>
+         
+       </div>
+         
+         
+         
+         </div>
+         
+       
+        
+       </div>
+       
+     
+      
+      
+      
+      
+    </section>
+   
+     <!-- Footer -->
+
+      
+      <footer id="footer">
+        
+   <p>Danish Electronics</p>
+   
+   <div class="footer_box">
+   
+   <div id="detail">
+      
+        <h3>subscribe</h3>
+        
+        
+        
+        <form method="post" id="address" action="https://formspree.io/f/xgebeper">
+           
+          
+        <input type="email" name="email" id="email" style="display:block;" placeholder="Enter the email" required>
+          
+          
+          <input type="text" name="name" id="input1" placeholder="Enter the name" required>
+          
+          <input type="submit" name="submit" id="input"/>
+          
+          
+          
+          
+        </form>
+        </div>
+        
+        
+        
+        <div id="list-company">
+          <h1>company</h1>
+        
+            <ul>
+              
+              <li>Home</li>
+<li>contact</li>
+
+<li>our service</li>
+
+<li>help</li>
+
+
+
+
+              </ul>
+        
+        </div>
+        
+        <div id="ul-service">
+          
+          <h1>service</h1>
+          
+          
+          <ul>
+            
+            <li>repair inverter</li>
+            <li>jumbo inverter</li>
+            <li>sukam inverter</li>
+            <li>excide inverter</li>
+            
+            </ul>
+        </div>
+        
+      </div>
+        
+             <div id="social-media">
+               
+               <h1>social media link</h1>
+       
+       <a href="#" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+        
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        
+  <a href="#"><i class="fa-brands fa-twitter"></i>
+  </a>
+  
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+
+        
+  </div>
+
+
+        
+      </footer>
+      
+     <div id="footer_container">
+       
+       <p>@ 2023 copyright company.</p>
+       
+       
+     </div>
+    
+       
+     
+       
+  
+  
+ </main>
+ 
+ 
+
+   
+  
+  <script>
+
+    
+$(document).ready(
+  function()
+
+{
+  $("#toggle").click(function(){
+    $("#navbar").slideDown("slow");
+  });
+}
+);
+
+
+$(document).ready(
+  function()
+
+{
+  $("#xMark").click(function(){
+    $("#navbar").slideUp("slow");
+  });
+}
+);
+
+
+
+$(document).ready(
+  function()
+
+{
+  $(".button").click(function(){
+    $("#resister").fadeIn("slow");
+  });
+}
+);
+
+
+
+$(document).ready(
+  function()
+
+{
+  $("#mark").click(function(){
+    $("#resister").fadeOut("slow");
+  });
+}
+);
+
+ </script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+ 
+<script>
+  AOS.init();
+</script>
+
+
+ 
+  
+  
+  
+  
+
+</body>
+
+</html>
+
+
+
